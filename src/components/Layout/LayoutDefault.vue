@@ -4,7 +4,8 @@
         <div class="main">
                 <div class="wrapper">
                     <slot/>
-                    <!-- вот здесь слот вообще супер непонятный, есть <router-view></router-view> -->
+                    <!-- вот здесь слот вообще супер непонятный, есть
+                    <router-view></router-view> -->
                 </div>
             </div>
         <Footer/>
