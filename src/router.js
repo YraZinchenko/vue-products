@@ -15,6 +15,7 @@ export default new Router({
       name: 'Home',
       component: Home
     },
+    // Products за все отвечает и это очень плохо, нагромаждение логики, непонятно зачем, все разбить на отдельные компоненты нужно
     {
       path: '/products',
       name: 'Products',

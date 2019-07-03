@@ -3,7 +3,10 @@
         <img :src="product.img">
         <div class="card-info">
             <a :href="product.link" class="card-link">{{cutName(product.name)}}</a>
+            <!-- код стайл в {{ nameVariable }} -->
+            <!-- почему вот здесь href, а не через роутинг сделано? -->
             <div class="card-price">Price: {{product.price}}</div>
+            <!-- код стайл в {{ nameVariable }} -->
         </div>
     </div>
 </template>
