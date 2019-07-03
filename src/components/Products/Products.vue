@@ -7,6 +7,12 @@
           v-on:click="handleClick(category)"
           class="sidebar-link"
           active-class="sidebar-link__active"
+          // код стайл где? должно быть все в одну линию a
+                                                         b
+                                                         c
+                                                         d
+                                                         e
+                                                         f
           >
             {{category}}
           </div>
@@ -17,6 +23,7 @@
         </div>
         <div class="list">
           <Item v-for="(product, index) in filterProducts" :key="index" :product="product"/>
+          // что за айтем такой не понятно, если не смотреть в структуру папок то вообще не знаешь что это, лучше сменить название
         </div>
       </div>
     </layout-default>
@@ -62,6 +69,7 @@ export default {
           category: category
         } })
       this.handleFilterProducts(category)
+      // а вот здесь вызов метод после пуша роутинга вообще работает? даже если работает лучше вынести перед пуш
     },
     handleFilterProducts (category = this.$route.params.category) {
       this.filterProducts = this.products.filter(product => product.bsr_category === category)
