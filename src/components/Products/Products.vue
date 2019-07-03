@@ -7,6 +7,12 @@
           v-on:click="handleClick(category)"
           class="sidebar-link"
           active-class="sidebar-link__active"
+          // код стайл где? должно быть все в одну линию a
+                                                         b
+                                                         c
+                                                         d
+                                                         e
+                                                         f
           >
             {{category}}
           </div>
